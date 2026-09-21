@@ -33,14 +33,15 @@ export default function HomePage() {
           <div className="animate-float-in">
             <Badge tone="gold">For MBA &amp; engineering students</Badge>
             <h1 className="mt-5 font-display text-4xl leading-tight md:text-6xl">
-              <span className="text-gradient">Switch roles.</span>
+              <span className="text-gradient">Understand corporate.</span>
               <br />
-              Switch companies. <br />
-              With a plan.
+              Switch roles <br />
+              with a clear plan.
             </h1>
             <p className="mt-5 max-w-md text-lg text-text-muted">
-              Live classes, curated courses and 1:1 mentorship that give you
-              clarity on your career path, and the skills to get there.
+              Live classes, courses and 1:1 mentorship that help MBA and
+              engineering students learn how companies really work, and move
+              into the right role with confidence.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/courses" size="lg">
