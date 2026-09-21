@@ -4,6 +4,7 @@ import {
   signupSchema,
   orderSchema,
   verifySchema,
+  checkoutVerifySchema,
   fieldErrors,
 } from "./validation";
 
@@ -60,6 +61,24 @@ describe("validation schemas", () => {
       }).success,
     ).toBe(true);
     expect(verifySchema.safeParse({}).success).toBe(false);
+  });
+
+  it("validates the combined checkout-verify payload", () => {
+    expect(
+      checkoutVerifySchema.safeParse({
+        razorpay_order_id: "o",
+        razorpay_payment_id: "p",
+        razorpay_signature: "s",
+        courseSlug: "sde",
+      }).success,
+    ).toBe(true);
+    expect(
+      checkoutVerifySchema.safeParse({
+        razorpay_order_id: "o",
+        razorpay_payment_id: "p",
+        razorpay_signature: "s",
+      }).success,
+    ).toBe(false);
   });
 });
 

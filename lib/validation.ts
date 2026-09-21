@@ -41,6 +41,10 @@ export const verifySchema = z.object({
   razorpay_signature: z.string().min(1),
 });
 
+export const checkoutVerifySchema = verifySchema.extend({
+  courseSlug: z.string().min(1),
+});
+
 export type LoginValues = z.infer<typeof loginSchema>;
 export type SignupValues = z.infer<typeof signupSchema>;
 
