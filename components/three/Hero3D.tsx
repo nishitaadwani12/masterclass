@@ -1,42 +1,48 @@
 "use client";
 
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, MeshDistortMaterial, Environment } from "@react-three/drei";
-import type { Mesh } from "three";
-import { spin } from "@/lib/three";
+import { AdditiveBlending, type Points } from "three";
+import {
+  buildGrid,
+  buildGridColors,
+  updateWaveField,
+} from "@/lib/waveField";
 
-function Knot() {
-  const ref = useRef<Mesh>(null);
-  useFrame((_, delta) => spin(ref.current, delta));
+const DIM = 90;
+const SEPARATION = 0.11;
+
+function WaveField() {
+  const ref = useRef<Points>(null);
+  const positions = useMemo(() => buildGrid(DIM, SEPARATION), []);
+  const colors = useMemo(() => buildGridColors(DIM, SEPARATION), []);
+
+  useFrame((state) => updateWaveField(ref.current, state.clock.elapsedTime));
 
   return (
-    <Float speed={1.4} rotationIntensity={0.6} floatIntensity={1.2}>
-      <mesh ref={ref} scale={1.5}>
-        <icosahedronGeometry args={[1.3, 12]} />
-        <MeshDistortMaterial
-          color="#7c5cff"
-          emissive="#4c3bd8"
-          emissiveIntensity={0.35}
-          roughness={0.15}
-          metalness={0.6}
-          distort={0.35}
-          speed={1.6}
-        />
-      </mesh>
-    </Float>
+    <points ref={ref} rotation={[-Math.PI / 2.6, 0, 0]}>
+      <bufferGeometry>
+        <bufferAttribute attach="attributes-position" args={[positions, 3]} />
+        <bufferAttribute attach="attributes-color" args={[colors, 3]} />
+      </bufferGeometry>
+      <pointsMaterial
+        size={0.04}
+        vertexColors
+        sizeAttenuation
+        transparent
+        opacity={0.95}
+        blending={AdditiveBlending}
+        depthWrite={false}
+      />
+    </points>
   );
 }
 
 export function HeroScene() {
   return (
-    <>
-      <ambientLight intensity={0.6} />
-      <directionalLight position={[5, 5, 5]} intensity={1.4} color="#f4d488" />
-      <pointLight position={[-5, -3, -2]} intensity={2} color="#7c5cff" />
-      <Knot />
-      <Environment preset="city" />
-    </>
+    <group>
+      <WaveField />
+    </group>
   );
 }
 
@@ -44,7 +50,7 @@ export function Hero3D() {
   return (
     <Canvas
       data-testid="hero-canvas"
-      camera={{ position: [0, 0, 5], fov: 45 }}
+      camera={{ position: [0, 1.1, 3], fov: 60 }}
       dpr={[1, 2]}
       className="h-full w-full"
     >

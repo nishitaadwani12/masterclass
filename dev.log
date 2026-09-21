@@ -1,0 +1,628 @@
+
+> masterclass@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.25
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.8:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1548ms
+ ✓ Compiled /middleware in 464ms (170 modules)
+ ○ Compiling / ...
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (113kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+<w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (267kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
+ ✓ Compiled / in 4.1s (1798 modules)
+ GET / 200 in 4537ms
+ ○ Compiling /courses ...
+ ✓ Compiled /courses in 1317ms (1787 modules)
+ GET /courses 200 in 1473ms
+ ✓ Compiled /courses/[slug] in 195ms (1793 modules)
+ GET /courses/sde-interview-mastery 200 in 873ms
+ ✓ Compiled /live-classes in 148ms (1798 modules)
+ GET /live-classes 200 in 266ms
+ ✓ Compiled /login in 480ms (1944 modules)
+⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715
+ GET /login 200 in 615ms
+ ✓ Compiled /signup in 188ms (1952 modules)
+⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715
+ GET /signup 200 in 284ms
+ GET / 200 in 195ms
+ ✓ Compiled /favicon.ico in 473ms (1094 modules)
+ GET /favicon.ico 200 in 562ms
+ GET / 200 in 265ms
+ GET /favicon.ico 200 in 12ms
+ GET /login 200 in 25ms
+ GET /signup 200 in 26ms
+ ✓ Compiled in 463ms (889 modules)
+ GET /signup 200 in 18ms
+ ✓ Compiled in 481ms (870 modules)
+ GET /signup 200 in 102ms
+ ✓ Compiled in 70ms (351 modules)
+ GET /signup 200 in 21ms
+ ✓ Compiled in 93ms (351 modules)
+ GET /signup 200 in 19ms
+ ✓ Compiled /courses in 167ms (529 modules)
+ GET /courses 200 in 234ms
+ ✓ Compiled in 83ms (351 modules)
+ GET /courses 200 in 19ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/courses/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/page.js:244:7704)
+    at Object.<anonymous> (.next/server/app/page.js:244:7758) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 958ms (1196 modules)
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/courses/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/page.js:244:7704)
+    at Object.<anonymous> (.next/server/app/page.js:244:7758) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ GET / 500 in 2960ms
+ GET / 500 in 273ms
+Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/page.js:244:7704)
+    at Object.<anonymous> (.next/server/app/page.js:244:7758) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ GET /courses 500 in 525ms
+ GET /courses 500 in 246ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ GET / 500 in 275ms
+Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/page.js:244:7704)
+    at Object.<anonymous> (.next/server/app/page.js:244:7758) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ✓ Compiled /favicon.ico in 103ms (723 modules)
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/favicon.ico/route.js:1:41248)
+    at Object.<anonymous> (.next/server/app/favicon.ico/route.js:1:41298) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/favicon.ico'
+}
+ GET /favicon.ico 500 in 142ms
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_error.js:19:14418)
+    at Object.<anonymous> (.next/server/pages/_error.js:19:14464) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ GET /courses 500 in 80ms
+ GET /courses 500 in 30ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/favicon.ico/route.js:1:41248)
+    at Object.<anonymous> (.next/server/app/favicon.ico/route.js:1:41298) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/favicon.ico'
+}
+ GET /favicon.ico 500 in 21ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/courses/page.js:2:22925)
+    at Object.<anonymous> (.next/server/app/courses/page.js:2:22975) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/courses'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'] {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/adwanin/workplace/masterclass/.next/routes-manifest.json'
+}
+ GET /courses 500 in 104ms
+ GET /courses 500 in 24ms
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/favicon.ico/route.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/favicon.ico/route.js:1:41248)
+    at Object.<anonymous> (.next/server/app/favicon.ico/route.js:1:41298) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/favicon.ico'
+}
+ GET /favicon.ico 500 in 24ms
+ ✓ Compiled in 182ms (1227 modules)
+ ✓ Compiled in 164ms (1227 modules)
+ GET / 200 in 124ms
+ GET /courses 200 in 20ms
+ GET /favicon.ico 200 in 33ms
+ ✓ Compiled /courses/[slug] in 119ms (632 modules)
+ ✓ Compiled (647 modules)
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/login/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/login/page.js:2:12577)
+    at Object.<anonymous> (.next/server/app/login/page.js:2:12631) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/login'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/login/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/signup/page.js:2:20432)
+    at Object.<anonymous> (.next/server/app/signup/page.js:2:20486) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/signup'
+}
+ ⨯ Error: Cannot find module './331.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/login/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/app/page.js:244:7704)
+    at Object.<anonymous> (.next/server/app/page.js:244:7758) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ GET /live-classes 200 in 451ms
+ GET /courses/product-management-transition 200 in 433ms
+ GET /courses/sde-interview-mastery 200 in 72ms
+ GET /courses/consulting-case-prep 200 in 72ms
+ ✓ Compiled /_error in 350ms (1232 modules)
+ ⨯ Failed to generate static paths for /courses/[slug]:
+[Error: Cannot find module './vendor-chunks/clsx.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/courses/[slug]/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/dev/static-paths-worker.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/compiled/jest-worker/processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /courses/[slug]:
+[Error: Cannot find module './vendor-chunks/clsx.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/courses/[slug]/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/dev/static-paths-worker.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/compiled/jest-worker/processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Failed to generate static paths for /courses/[slug]:
+[Error: Cannot find module './vendor-chunks/clsx.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/app/courses/[slug]/page.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/dev/static-paths-worker.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/compiled/jest-worker/processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ✓ Compiled in 0ms (742 modules)
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- /Users/adwanin/workplace/masterclass/.next/server/webpack-runtime.js
+- /Users/adwanin/workplace/masterclass/.next/server/pages/_document.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/require.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/load-components.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/utils.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/options.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/swc/index.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/config.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/next.js
+- /Users/adwanin/workplace/masterclass/node_modules/next/dist/server/lib/start-server.js
+    at <unknown> (.next/server/pages/_document.js:1:325)
+    at Object.<anonymous> (.next/server/pages/_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ✓ Compiled in 193ms (1232 modules)

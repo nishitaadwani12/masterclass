@@ -7,13 +7,8 @@ vi.mock("@react-three/fiber", () => ({
   Canvas: ({ children }: { children: ReactNode }) => (
     <div data-testid="hero-canvas">{children}</div>
   ),
-  useFrame: (cb: (state: unknown, delta: number) => void) => cb({}, 0.016),
-}));
-
-vi.mock("@react-three/drei", () => ({
-  Float: ({ children }: { children: ReactNode }) => <div>{children}</div>,
-  MeshDistortMaterial: () => null,
-  Environment: () => null,
+  useFrame: (cb: (state: { clock: { elapsedTime: number } }) => void) =>
+    cb({ clock: { elapsedTime: 0.5 } }),
 }));
 
 import { Hero3D, HeroScene } from "./Hero3D";
@@ -24,8 +19,8 @@ describe("Hero3D", () => {
     expect(screen.getByTestId("hero-canvas")).toBeInTheDocument();
   });
 
-  it("renders the scene graph without a WebGL context", () => {
-    // Exercises Knot's useFrame callback (ref is null during render -> no-op).
+  it("renders the wave field without a WebGL context", () => {
+    // Exercises WaveField's useFrame callback (ref is null during render -> no-op).
     expect(() => render(<HeroScene />)).not.toThrow();
   });
 });
