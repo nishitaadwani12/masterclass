@@ -33,6 +33,12 @@ export const COURSES: Course[] = [
         lessons: ["Writing a crisp PRD", "Prioritisation frameworks", "Mock interview clinic"],
       },
     ],
+    classDetails:
+      "Live cohort classes run twice a week on Zoom (90 minutes each), with recordings shared after every session. Enrolled students get the Zoom link below and calendar invites.",
+    schedule: [
+      { title: "Kickoff: the PM landscape", startsAt: "2026-10-06T13:30:00.000Z", durationMinutes: 90 },
+      { title: "Live PRD teardown", startsAt: "2026-10-09T13:30:00.000Z", durationMinutes: 90 },
+    ],
     featured: true,
   },
   {
@@ -62,6 +68,12 @@ export const COURSES: Course[] = [
         lessons: ["Scaling fundamentals", "Designing real systems", "The behavioural round"],
       },
     ],
+    classDetails:
+      "Weekly live problem-solving on Zoom with senior engineers (75 minutes), plus a mock-interview slot. Enrolled students see the Zoom link below and get session reminders.",
+    schedule: [
+      { title: "Live DSA patterns walkthrough", startsAt: "2026-10-07T15:00:00.000Z", durationMinutes: 75 },
+      { title: "System design teardown", startsAt: "2026-10-14T15:00:00.000Z", durationMinutes: 75 },
+    ],
     featured: true,
   },
   {
@@ -90,6 +102,12 @@ export const COURSES: Course[] = [
         lessons: ["Personal impact stories", "Live case clinic"],
       },
     ],
+    classDetails:
+      "Live case-practice sessions on Zoom (60 minutes) with peer breakouts and mentor feedback. Enrolled students get the Zoom link below.",
+    schedule: [
+      { title: "Live case: market entry", startsAt: "2026-10-11T11:00:00.000Z", durationMinutes: 60 },
+      { title: "Fit interview clinic", startsAt: "2026-10-18T11:00:00.000Z", durationMinutes: 60 },
+    ],
   },
   {
     slug: "career-clarity-1on1",
@@ -117,6 +135,12 @@ export const COURSES: Course[] = [
         title: "Plan",
         lessons: ["Skills-gap roadmap", "30-60-90 day plan"],
       },
+    ],
+    classDetails:
+      "Private 1:1 mentorship calls on Zoom (45 minutes) scheduled to suit you. Your personal Zoom link appears below once you enrol.",
+    schedule: [
+      { title: "Session 1: discovery call", startsAt: "2026-10-08T10:00:00.000Z", durationMinutes: 45 },
+      { title: "Session 2: roadmap review", startsAt: "2026-10-15T10:00:00.000Z", durationMinutes: 45 },
     ],
   },
 ];

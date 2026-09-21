@@ -9,6 +9,13 @@ export interface CourseModule {
   lessons: string[];
 }
 
+export interface CourseSession {
+  title: string;
+  /** ISO 8601 start time. */
+  startsAt: string;
+  durationMinutes: number;
+}
+
 export interface Course {
   slug: string;
   title: string;
@@ -25,6 +32,10 @@ export interface Course {
   listPriceInPaise?: number;
   outcomes: string[];
   modules: CourseModule[];
+  /** Public description of how the live classes run. */
+  classDetails?: string;
+  /** Upcoming live sessions for this course (public schedule). */
+  schedule?: CourseSession[];
   featured?: boolean;
 }
 

@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllCourses, getCourseBySlug } from "@/lib/courses";
+import { getCourseBySlug } from "@/lib/courses";
 import { formatInr, discountPercent, priceWithGst } from "@/lib/pricing";
 import { audienceLabel, formatLabel } from "@/lib/format";
+import { getZoomUrl } from "@/lib/classAccess";
+import { createClient } from "@/lib/supabase/server";
 import { Badge } from "@/components/ui/Badge";
 import { CheckoutButton } from "@/components/CheckoutButton";
-
-export function generateStaticParams() {
-  return getAllCourses().map((course) => ({ slug: course.slug }));
-}
+import { CourseSchedule } from "@/components/CourseSchedule";
 
 export async function generateMetadata({
   params,
@@ -35,6 +34,23 @@ export default async function CourseDetailPage({
   }
 
   const discount = discountPercent(course.priceInPaise, course.listPriceInPaise);
+
+  // Only reveal the Zoom link to a signed-in student who has enrolled.
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  let enrolled = false;
+  if (user) {
+    const { data } = await supabase
+      .from("enrollments")
+      .select("id")
+      .eq("user_id", user.id)
+      .eq("course_slug", slug)
+      .maybeSingle();
+    enrolled = Boolean(data);
+  }
+  const zoomUrl = enrolled ? getZoomUrl(slug) : undefined;
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16">
@@ -76,6 +92,15 @@ export default async function CourseDetailPage({
                 </ul>
               </div>
             ))}
+          </div>
+
+          <div className="mt-10">
+            <CourseSchedule
+              sessions={course.schedule ?? []}
+              classDetails={course.classDetails}
+              enrolled={enrolled}
+              zoomUrl={zoomUrl}
+            />
           </div>
         </div>
 
