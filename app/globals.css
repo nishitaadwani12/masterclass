@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand palette — deep midnight with violet + warm gold accents */
+  /* Brand palette: deep midnight with violet + warm gold accents */
   --color-ink: #08060f;
   --color-ink-soft: #0f0b1e;
   --color-surface: #14102a;

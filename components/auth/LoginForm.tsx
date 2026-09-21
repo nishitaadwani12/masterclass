@@ -8,6 +8,7 @@ import { loginSchema, fieldErrors } from "@/lib/validation";
 import { readField } from "@/lib/forms";
 import { Button } from "@/components/ui/Button";
 import { Field } from "./Field";
+import { SocialAuth } from "./SocialAuth";
 
 export function LoginForm() {
   const router = useRouter();
@@ -45,31 +46,34 @@ export function LoginForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
-      {errors.form ? (
-        <p role="alert" className="text-sm text-red-300">
-          {errors.form}
+    <div className="flex flex-col gap-6">
+      <SocialAuth next={next} />
+      <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
+        {errors.form ? (
+          <p role="alert" className="text-sm text-red-300">
+            {errors.form}
+          </p>
+        ) : null}
+
+        <Field label="Email" name="email" type="email" error={errors.email} />
+        <Field
+          label="Password"
+          name="password"
+          type="password"
+          error={errors.password}
+        />
+
+        <Button type="submit" size="lg" disabled={submitting} aria-busy={submitting}>
+          {submitting ? "Signing in…" : "Log in"}
+        </Button>
+
+        <p className="text-center text-sm text-text-muted">
+          New here?{" "}
+          <Link href="/signup" className="text-violet-bright hover:underline">
+            Create an account
+          </Link>
         </p>
-      ) : null}
-
-      <Field label="Email" name="email" type="email" error={errors.email} />
-      <Field
-        label="Password"
-        name="password"
-        type="password"
-        error={errors.password}
-      />
-
-      <Button type="submit" size="lg" disabled={submitting} aria-busy={submitting}>
-        {submitting ? "Signing in…" : "Log in"}
-      </Button>
-
-      <p className="text-center text-sm text-text-muted">
-        New here?{" "}
-        <Link href="/signup" className="text-violet-bright hover:underline">
-          Create an account
-        </Link>
-      </p>
-    </form>
+      </form>
+    </div>
   );
 }

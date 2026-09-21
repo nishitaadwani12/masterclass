@@ -9,15 +9,15 @@ export const COURSES: Course[] = [
   {
     slug: "product-management-transition",
     title: "Product Management Transition",
-    subtitle: "From engineer or analyst to PM — the structured way.",
+    subtitle: "From engineer or analyst to PM, the structured way.",
     description:
       "A live cohort that takes you from your current role into product management: frameworks, artefacts, mock interviews and a portfolio project reviewed by working PMs.",
     audience: "both",
     level: "intermediate",
     format: "live-cohort",
     durationWeeks: 8,
-    priceInPaise: 4999900,
-    listPriceInPaise: 7499900,
+    priceInPaise: 49900,
+    listPriceInPaise: 79900,
     outcomes: [
       "Build a PRD and product portfolio from scratch",
       "Crack product-sense and execution interviews",
@@ -45,8 +45,8 @@ export const COURSES: Course[] = [
     level: "advanced",
     format: "live-cohort",
     durationWeeks: 12,
-    priceInPaise: 5999900,
-    listPriceInPaise: 8999900,
+    priceInPaise: 49900,
+    listPriceInPaise: 74900,
     outcomes: [
       "Pattern-based approach to 250+ DSA problems",
       "Design scalable systems in a 45-minute round",
@@ -74,7 +74,7 @@ export const COURSES: Course[] = [
     level: "intermediate",
     format: "live-cohort",
     durationWeeks: 6,
-    priceInPaise: 4499900,
+    priceInPaise: 39900,
     outcomes: [
       "Structure any case in under a minute",
       "Nail guesstimates and market sizing",
@@ -101,8 +101,8 @@ export const COURSES: Course[] = [
     level: "beginner",
     format: "mentorship",
     durationWeeks: 4,
-    priceInPaise: 1999900,
-    listPriceInPaise: 2999900,
+    priceInPaise: 29900,
+    listPriceInPaise: 49900,
     outcomes: [
       "A clear target role and company shortlist",
       "A personalised skills-gap roadmap",

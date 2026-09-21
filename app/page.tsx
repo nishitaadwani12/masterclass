@@ -40,7 +40,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-md text-lg text-text-muted">
               Live classes, curated courses and 1:1 mentorship that give you
-              clarity on your career path — and the skills to get there.
+              clarity on your career path, and the skills to get there.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href="/courses" size="lg">

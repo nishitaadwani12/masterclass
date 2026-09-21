@@ -3,7 +3,7 @@ import { LiveClassCard } from "@/components/LiveClassCard";
 import { getUpcomingLiveClasses } from "@/lib/liveClasses";
 
 export const metadata: Metadata = {
-  title: "Live Classes — Masterclass",
+  title: "Live Classes | Masterclass",
   description: "Join upcoming live cohorts and workshops with working mentors.",
 };
 
@@ -19,7 +19,7 @@ export default function LiveClassesPage() {
 
       {classes.length === 0 ? (
         <p className="mt-10 text-text-muted">
-          No live classes scheduled right now — new dates drop soon.
+          No live classes scheduled right now. New dates drop soon.
         </p>
       ) : (
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

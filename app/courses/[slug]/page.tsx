@@ -18,9 +18,9 @@ export async function generateMetadata({
   const { slug } = await params;
   const course = getCourseBySlug(slug);
   if (!course) {
-    return { title: "Course not found — Masterclass" };
+    return { title: "Course not found | Masterclass" };
   }
-  return { title: `${course.title} — Masterclass`, description: course.subtitle };
+  return { title: `${course.title} | Masterclass`, description: course.subtitle };
 }
 
 export default async function CourseDetailPage({

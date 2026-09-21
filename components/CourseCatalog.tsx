@@ -55,7 +55,7 @@ export function CourseCatalog({ courses }: { courses: Course[] }) {
 
       {visible.length === 0 ? (
         <p className="mt-10 text-center text-text-muted">
-          No courses for this track yet — check back soon.
+          No courses for this track yet. Check back soon.
         </p>
       ) : (
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

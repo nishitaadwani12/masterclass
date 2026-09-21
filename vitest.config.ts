@@ -24,6 +24,7 @@ export default defineConfig({
         "lib/**/*.{ts,tsx}",
         "components/**/*.tsx",
         "app/api/**/*.ts",
+        "app/auth/**/*.ts",
       ],
       exclude: [
         "**/*.d.ts",

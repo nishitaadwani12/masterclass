@@ -43,4 +43,11 @@ describe("courses", () => {
   it("returns all courses for the 'both' audience", () => {
     expect(getCoursesByAudience("both")).toHaveLength(COURSES.length);
   });
+
+  it("prices every course within the student-friendly ₹250–₹500 range", () => {
+    for (const course of COURSES) {
+      expect(course.priceInPaise).toBeGreaterThanOrEqual(25000);
+      expect(course.priceInPaise).toBeLessThanOrEqual(50000);
+    }
+  });
 });

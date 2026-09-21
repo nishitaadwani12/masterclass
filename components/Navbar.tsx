@@ -15,7 +15,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line/60 bg-ink/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 bg-gradient-to-b from-ink/80 via-ink/40 to-transparent backdrop-blur-sm">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <Link href="/" className="flex items-center gap-2 font-display text-xl">
           <span
@@ -66,7 +66,7 @@ export function Navbar() {
 
       <div
         className={clsx(
-          "border-t border-line/60 md:hidden",
+          "bg-ink/95 backdrop-blur-xl md:hidden",
           open ? "block" : "hidden",
         )}
       >

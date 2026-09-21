@@ -8,6 +8,7 @@ import { signupSchema, fieldErrors } from "@/lib/validation";
 import { readField } from "@/lib/forms";
 import { Button } from "@/components/ui/Button";
 import { Field } from "./Field";
+import { SocialAuth } from "./SocialAuth";
 
 export function SignupForm() {
   const router = useRouter();
@@ -70,7 +71,9 @@ export function SignupForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
+    <div className="flex flex-col gap-6">
+      <SocialAuth />
+      <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
       {errors.form ? (
         <p role="alert" className="text-sm text-red-300">
           {errors.form}
@@ -116,6 +119,7 @@ export function SignupForm() {
           Log in
         </Link>
       </p>
-    </form>
+      </form>
+    </div>
   );
 }
