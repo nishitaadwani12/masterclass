@@ -25,7 +25,7 @@ describe("buildCheckoutOptions", () => {
     expect(opts.currency).toBe("INR");
     expect(opts.order_id).toBe("order_1");
     expect(opts.description).toBe("SDE Interview Mastery");
-    expect(opts.name).toBe("Masterclass");
+    expect(opts.name).toBe("SwitchPath");
     expect(opts.theme.color).toBe("#7c5cff");
 
     const success = {

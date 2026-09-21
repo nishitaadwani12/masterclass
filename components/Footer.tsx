@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="border-t border-line/60 bg-ink-soft">
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 md:grid-cols-4">
         <div className="sm:col-span-2 md:col-span-1">
-          <div className="font-display text-lg text-gradient">Masterclass</div>
+          <div className="font-display text-lg text-gradient">SwitchPath</div>
           <p className="mt-2 max-w-xs text-sm text-text-muted">
             Career clarity and role-switching mentorship for MBA and engineering
             students.
@@ -38,7 +38,7 @@ export function Footer() {
         />
       </div>
       <div className="border-t border-line/60 px-5 py-5 text-center text-xs text-text-muted">
-        © {year} Masterclass. All rights reserved.
+        © {year} SwitchPath. All rights reserved.
       </div>
     </footer>
   );

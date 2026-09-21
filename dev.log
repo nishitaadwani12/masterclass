@@ -1,5 +1,5 @@
 
-> masterclass@0.1.0 dev
+> switchpath@0.1.0 dev
 > next dev
 
    ▲ Next.js 15.5.25
@@ -8,34 +8,11 @@
    - Environments: .env.local
 
  ✓ Starting...
- ✓ Ready in 1420ms
- ✓ Compiled /middleware in 407ms (170 modules)
+ ✓ Ready in 1516ms
+ ✓ Compiled /middleware in 408ms (170 modules)
  ○ Compiling / ...
 <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (113kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
 <w> [webpack.cache.PackFileCacheStrategy] Serializing big strings (267kiB) impacts deserialization performance (consider using Buffer instead and decode when needed)
- ✓ Compiled / in 2.4s (711 modules)
- GET / 200 in 2819ms
- ○ Compiling /courses ...
- ✓ Compiled /courses in 1194ms (700 modules)
- GET /courses 200 in 1326ms
- GET / 200 in 497ms
- ✓ Compiled /courses/[slug] in 166ms (706 modules)
- ✓ Compiled /favicon.ico in 92ms (463 modules)
- GET /favicon.ico 200 in 172ms
- GET /courses/sde-interview-mastery 200 in 682ms
- ✓ Compiled /live-classes in 111ms (728 modules)
- GET /live-classes 200 in 257ms
- ○ Compiling /login ...
- ✓ Compiled /login in 585ms (879 modules)
-⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715
- GET /login 200 in 757ms
- ✓ Compiled /signup in 149ms (887 modules)
-⚠️  Node.js 20 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 22 or later. For more information, visit: https://github.com/orgs/supabase/discussions/45715
- GET /signup 200 in 253ms
- GET /courses/sde-interview-mastery 200 in 51ms
- GET /login 200 in 36ms
- GET / 200 in 78ms
- GET /courses 200 in 45ms
- GET /login 200 in 31ms
- GET /signup 200 in 36ms
- GET /live-classes 200 in 57ms
+ ✓ Compiled / in 2.5s (711 modules)
+ GET / 200 in 2899ms
+ GET / 200 in 185ms

@@ -73,7 +73,7 @@ export function buildCheckoutOptions(params: {
     key: order.keyId,
     amount: order.amount,
     currency: order.currency,
-    name: "Masterclass",
+    name: "SwitchPath",
     description: order.courseTitle,
     order_id: order.orderId,
     handler: onSuccess,

@@ -6,7 +6,7 @@ import { Navbar } from "./Navbar";
 describe("Navbar", () => {
   it("renders brand and primary links", () => {
     render(<Navbar />);
-    expect(screen.getAllByText("Masterclass").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("SwitchPath").length).toBeGreaterThan(0);
     expect(screen.getAllByRole("link", { name: "Courses" }).length).toBeGreaterThan(0);
   });
 

@@ -22,9 +22,9 @@ export function Navbar() {
             aria-hidden
             className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-violet to-gold text-ink font-bold"
           >
-            M
+            S
           </span>
-          <span className="text-gradient font-semibold">Masterclass</span>
+          <span className="text-gradient font-semibold">SwitchPath</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

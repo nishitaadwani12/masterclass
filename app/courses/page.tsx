@@ -3,7 +3,7 @@ import { CourseCatalog } from "@/components/CourseCatalog";
 import { getAllCourses } from "@/lib/courses";
 
 export const metadata: Metadata = {
-  title: "Courses | Masterclass",
+  title: "Courses | SwitchPath",
   description: "Live cohorts, courses and mentorship for role and company switches.",
 };
 

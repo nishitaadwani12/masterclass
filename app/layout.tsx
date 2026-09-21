@@ -13,7 +13,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Masterclass: Career clarity for MBA & engineering students",
+  title: "SwitchPath: Career clarity for MBA & engineering students",
   description:
     "Live cohorts, courses and 1:1 mentorship to help MBA and engineering students switch roles and companies with confidence.",
 };

@@ -3,7 +3,7 @@ import { LiveClassCard } from "@/components/LiveClassCard";
 import { getUpcomingLiveClasses } from "@/lib/liveClasses";
 
 export const metadata: Metadata = {
-  title: "Live Classes | Masterclass",
+  title: "Live Classes | SwitchPath",
   description: "Join upcoming live cohorts and workshops with working mentors.",
 };
 

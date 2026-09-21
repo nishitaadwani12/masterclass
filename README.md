@@ -1,4 +1,4 @@
-# Masterclass
+# SwitchPath
 
 A live, interactive 3D ed-tech site for **MBA & engineering students** — career-clarity
 mentorship, live cohorts and self-paced courses to switch roles and companies. Built with
