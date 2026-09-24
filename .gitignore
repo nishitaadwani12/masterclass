@@ -37,6 +37,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cloudflare / opennext
+/.open-next
+/.wrangler
+
 # Amazon Brazil workspace artifacts (not part of the web app)
 /.builder-mcp
 /packageInfo
