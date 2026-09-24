@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 export function Footer() {
   return (
     <footer className="border-t border-line/60 bg-ink-soft">
-      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 md:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 sm:grid-cols-2 md:grid-cols-5">
         <div className="sm:col-span-2 md:col-span-1">
           <div className="font-display text-lg text-gradient">SwitchPath</div>
           <p className="mt-2 max-w-xs text-sm text-text-muted">
@@ -34,6 +34,15 @@ export function Footer() {
           links={[
             { href: "/login", label: "Log in" },
             { href: "/dashboard", label: "Dashboard" },
+          ]}
+        />
+        <FooterColumn
+          title="Legal"
+          links={[
+            { href: "/terms", label: "Terms" },
+            { href: "/privacy", label: "Privacy" },
+            { href: "/refund", label: "Refunds" },
+            { href: "/contact", label: "Contact" },
           ]}
         />
       </div>
